@@ -1,0 +1,290 @@
+$theme-name: 'jxBlue';
+
+// Windows Classic gray
+//$base-color: #D4D0C8;
+
+$base-color: #ccc;
+
+$font-family: Arial, Verdana, Georgia, sans-serif;
+$font-size: 12px;
+
+$panel-header-background-gradient: color-stops(#7E99C1, #536f85);
+$panel-header-background-color: #6883A2;
+$panel-border-color: #CCCCCC;
+$panel-border-width: 0;
+$panel-header-color: #fff;
+$panel-body-background-color: #fff;
+$panel-border-radius: null;
+$panel-header-font-size: 12px;
+
+//grid
+
+$grid-header-background-color:#7592A9 !important;
+$grid-header-background-gradient: null;
+$grid-header-over-background-color: #FFF;
+$grid-header-border-color: #FFF;
+$grid-header-over-border-color: #7592A9;
+$grid-header-color: #FFF;
+$grid-header-over-color: #000;
+
+$grid-row-cell-font: normal 12px $font-family;
+$grid-row-cell-selected-background-color: #DFEAF9;
+$grid-row-cell-selected-border-color: #DFEAF9;
+$grid-row-cell-over-border-color: #DFEAF9;
+$grid-row-cell-over-background-color: #DFEAF9;
+
+//toolbar
+$toolbar-background-color: #FFF;
+$toolbar-text-color: #000;
+$toolbar-text-font-size: 12px;
+$toolbar-separator-color: #666;
+
+//window
+$window-base-color: #f0f0f0;
+
+$window-border-radius: 0px;
+$window-border-width: 1px;
+$window-border-color: #CCC;
+$window-inner-border-width: 1px;
+$window-inner-border-color: #CCC;
+$window-background-color: $window-base-color;
+
+$window-body-border-width: 0px;
+$window-body-border-style: solid !default;
+$window-body-border-color: #CCC;
+$window-body-background-color: #f0f0f0;
+$window-body-color: #000;
+
+$window-header-padding: 5px 5px 0 !default;
+$window-header-font-size: 12px;
+$window-header-line-height: 22px;
+$window-header-color: #FFF;
+$window-header-font-weight: bold;
+
+$button-small-font-weight: bold;
+$button-medium-font-weight:bold;
+
+//base colors for the default button
+$button-default-base-color: #7590b4;
+$button-default-base-color-over: #7590b4;
+$button-default-base-color-focus: #7590b4;
+$button-default-base-color-pressed: #7590b4;
+$button-default-base-color-disabled: #7590b4;
+
+$button-default-border-color: #CCC;
+$button-default-border-color-over: #CCC;
+$button-default-border-color-focus: #CCC;
+$button-default-border-color-pressed: #CCC;
+$button-default-border-color-disabled: #CCC;
+
+$button-default-background-color: #7590b4;
+$button-default-background-color-over: #57738b;
+$button-default-background-color-focus: $button-default-background-color-over !default;
+$button-default-background-color-pressed: $button-default-base-color-pressed !default;
+$button-default-background-color-disabled: #FFF;
+
+$button-default-background-gradient: 'jx-matte';
+$button-default-background-gradient-over: 'jx-matte-reverse';
+$button-default-background-gradient-focus: $button-default-background-gradient-over !default;
+$button-default-background-gradient-pressed: 'jx-matte-reverse';
+$button-default-background-gradient-disabled: 'matte';
+
+$button-default-background-gradient-color-stops: #57738b;
+$button-default-background-gradient-color-stops-over: #7590b4;
+$button-default-background-gradient-color-stops-focus: $button-default-background-gradient-color-stops-over !default;
+$button-default-background-gradient-color-stops-pressed: $button-default-background-gradient-color-stops !default;
+$button-default-background-gradient-color-stops-disabled: #FFF;
+
+$button-default-color: #FFF !default;
+$button-default-color-over: $button-default-color !default;
+$button-default-color-focus: $button-default-color-over !default;
+$button-default-color-pressed: $button-default-color !default;
+$button-default-color-disabled: #999;
+
+
+$button-small-border-radius: 1px;
+$button-small-border-width: 1px;
+$button-small-padding: 4px;
+$button-small-text-padding: 4px;
+$button-small-font-size: $font-size; 
+$button-small-font-weight: bold;
+
+
+$button-medium-border-radius: 1px;
+$button-medium-border-width: 1px;
+$button-medium-padding: 3px;
+$button-medium-text-padding: 3px;
+$button-medium-font-size: $font-size;
+$button-medium-font-weight: bold;
+
+
+//fieldset
+$fieldset-header-font: bold $font-size $font-family;
+
+//tabs
+$tab-base-color: #eaeaea;
+$tab-color-active: #333333;
+$tab-top-border-radius: 2px 2px 0 0;
+$tabbar-background-gradient: none;
+
+$tab-font-size: 12px;
+
+$tab-background-gradient: 'jx-tab';
+$tab-background-gradient-over: 'jx-tab-over' !default;
+$tab-background-gradient-active: 'jx-tab-active';
+$tab-background-gradient-disabled: 'tab-disabled' !default;
+
+$tabbar-bottom-body-border-width: 0 0 1px;
+
+//textfield
+$form-field-invalid-background-color: #fee;
+$form-field-invalid-border-color: #ff7870;
+
+$tip-background-color: #FFF;
+$tip-border-radius: 0;
+
+@import 'compass';
+@import 'ext4/default/all';
+
+@include extjs-toolbar-ui(
+    'breadCrumb',
+    $border-color: #CCC,
+    $background-gradient: color-stops(#7E99C1, #536f85),
+    $background-color: #536f85
+);
+
+@include extjs-toolbar-ui(
+    'shellTopBar',
+	$background-color: #FFF,
+	$border-color: #FFF
+);
+
+@include extjs-toolbar-ui(
+    'jxPagingToolbar',
+	$background-color: #7592A9,
+    $border-color: #7592A9
+);
+
+@include extjs-button-ui(
+    'breadCrumbLink',
+	$background-color: transparent,
+	$background-color-over: transparent,
+	$background-color-focus: transparent,
+    $background-color-pressed: transparent,
+    $background-color-disabled: transparent
+);
+
+@include extjs-button-ui(
+    'linkButton',
+	$font-family:$font-family,
+	$font-weight:bold,
+	$background-color: transparent,
+	$background-color-over: transparent,
+	$background-color-focus: transparent,
+    $background-color-pressed: transparent,
+    $background-color-disabled: transparent
+);
+
+
+
+.#{$prefix}panel-default{
+	padding: 0;
+	@include box-shadow(0,0,0,0);
+}
+
+.#{$prefix}resizable-handle-east, .#{$prefix}resizable-handle-west {
+        width: 1px;
+        height: 100%;
+        right: 0;
+        top: 0;
+    }
+.jxNavigationPanel .#{$prefix}tree-icon { display: none !important; }
+
+.jxNavigationPanel .#{$prefix}grid-row.#{$prefix}grid-row-over{
+	text-decoration: underline;
+}
+
+.#{$prefix}accordion-hd{
+	 @include background-gradient(#7E99C1, color-stops(#536f85, #7E99C1), top);
+}
+.#{$prefix}viewport, .#{$prefix}viewport body {
+        border-top: 3px solid #49A942;
+}
+
+
+.#{$prefix}window-header-default-top{
+	// needs latest Compass, add '@import "compass"' to your scss
+	background-color: #6883A2; // Old browsers
+	@include filter-gradient(#7E99C1, #536F85, vertical); // IE6-9
+	@include background-image(linear-gradient(top,  #7E99C1 0%,#536F85 100%));
+}
+
+//fix for IE
+.#{$prefix}viewport .#{$prefix}nlg .#{$prefix}window-header-default-top-mc{
+	background-color:transparent;
+}
+
+//fix for IE
+.#{$prefix}nlg .#{$prefix}btn-disabled .#{$prefix}btn-default-medium-mc{
+    background-image:none;
+}
+.#{$prefix}nlg .#{$prefix}btn-disabled .#{$prefix}btn-default-small-mc{
+    background-image:none;
+}
+
+
+
+//for messagebox icons
+.#{$prefix}message-box-question {
+	background-image: theme-background-image($theme-name, 'shared/Confirmation_32x32.png');
+}
+.#{$prefix}message-box-error {
+    background-image: theme-background-image($theme-name, 'shared/Error_32x32.png');
+}
+.#{$prefix}message-box-info {
+	background-image: theme-background-image($theme-name, 'shared/Information_32x32.png');
+}
+.#{$prefix}message-box-warning {
+	background-image: theme-background-image($theme-name, 'shared/Warning_32x32.png');
+}
+.#{$prefix}message-box-success {
+	background: transparent no-repeat top left;
+	background-image: theme-background-image($theme-name, 'shared/Success_32x32.png');
+}
+
+//for grid column header 
+.#{$prefix}column-header-text{
+	font-weight:bold;
+	font-size: 12px;
+	text-shadow: none;
+}
+
+.#{$prefix}column-header-over .#{$prefix}column-header-text, .#{$prefix}column-header-sort-ASC .#{$prefix}column-header-text, .#{$prefix}column-header-sort-DESC .#{$prefix}column-header-text{
+	color: #000;
+}
+
+.#{$prefix}column-header {
+	border-left-style: solid;
+	border-left-width: 1px;
+}
+
+.#{$prefix}viewport a.cls-more:link, .#{$prefix}viewport a.cls-more:visited {
+	color: #000;
+	cursor: pointer;
+	text-decoration: underline;
+}
+
+.#{$prefix}viewport a.cls-more:hover {
+	color: #000;
+	cursor: pointer;
+	text-decoration: underline;
+	font-weight: bold;
+}
+
+.#{$prefix}toolbar.#{$prefix}toolbar-breadCrumb {
+	@include filter-gradient(#7E99C1, #536F85, vertical);
+}
+
+.#{$prefix}toolbar.#{$prefix}toolbar-breadCrumb .#{$prefix}toolbar-text {
+	color: #fff;
+}
