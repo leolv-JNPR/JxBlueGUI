@@ -1,5 +1,5 @@
 $theme-name: 'jxBlue';
-
+$prefix: 'x4-';
 // Windows Classic gray
 //$base-color: #D4D0C8;
 
@@ -18,8 +18,7 @@ $panel-border-radius: null;
 $panel-header-font-size: 12px;
 
 //grid
-
-$grid-header-background-color:#7592A9 !important;
+$grid-header-background-color:#7592A9;
 $grid-header-background-gradient: null;
 $grid-header-over-background-color: #FFF;
 $grid-header-border-color: #FFF;
@@ -32,6 +31,10 @@ $grid-row-cell-selected-background-color: #DFEAF9;
 $grid-row-cell-selected-border-color: #DFEAF9;
 $grid-row-cell-over-border-color: #DFEAF9;
 $grid-row-cell-over-background-color: #DFEAF9;
+
+//$grid-grouped-header-border-width: 0 0 2px 0;
+//$grid-grouped-header-border-color: #FFF;
+//$grid-grouped-header-background-color: #555;
 
 //toolbar
 $toolbar-background-color: #FFF;
@@ -95,7 +98,7 @@ $button-default-background-gradient-color-stops-focus: $button-default-backgroun
 $button-default-background-gradient-color-stops-pressed: $button-default-background-gradient-color-stops !default;
 $button-default-background-gradient-color-stops-disabled: #FFF;
 
-$button-default-color: #FFF !default;
+$button-default-color: #000;
 $button-default-color-over: $button-default-color !default;
 $button-default-color-focus: $button-default-color-over !default;
 $button-default-color-pressed: $button-default-color !default;
@@ -259,13 +262,30 @@ $tip-border-radius: 0;
 	text-shadow: none;
 }
 
-.#{$prefix}column-header-over .#{$prefix}column-header-text, .#{$prefix}column-header-sort-ASC .#{$prefix}column-header-text, .#{$prefix}column-header-sort-DESC .#{$prefix}column-header-text{
+.#{$prefix}grid-header-ct .#{$prefix}column-header-over {
 	color: #000;
 }
 
-.#{$prefix}column-header {
-	border-left-style: solid;
-	border-left-width: 1px;
+.#{$prefix}grid-header-ct .#{$prefix}column-header {
+        border-right: 1px solid #FFF;
+}
+
+.#{$prefix}grid-header-ct .#{$prefix}group-sub-header {
+        border-top: 1px solid #FFF;
+}
+
+//for links in toolbars
+.#{$prefix}toolbar-item a:link, .#{$prefix}toolbar-item a:visited {
+        color: #000;
+        cursor: pointer;
+        text-decoration: underline;
+}
+
+.#{$prefix}toolbar-item a:hover {
+        color: #000;
+        cursor: pointer;
+        text-decoration: underline;
+        font-weight: bold;
 }
 
 .#{$prefix}viewport a.cls-more:link, .#{$prefix}viewport a.cls-more:visited {
